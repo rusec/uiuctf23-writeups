@@ -67,20 +67,14 @@ The information in the header could be manually extracted.  If you wanted to, yo
 
 ![Audacity view of different frequencies in header, with a 0 bit highlighted](images/audacity_view.png)
 
-However, **this is not a smart route**.  I wasted a lot of time on this, and I couldn't get code working to do this.  Eventually, I came to the conclusion that since this is a standardized protocol, there's probably software to decode this already.  With some Googling, I came across [this forum post](http://forums.radioreference.com/threads/same-decoding.271140/post-2210417), which recommends three different programs to decode SAME messages.  **NOTE:  These only work on Windows.  There are alternatives for Linux such as [sameold](https://github.com/cbs228/sameold) in Rust or these [NWR tools](https://github.com/ghewgill/nwr), but I have not tested them.**
+However, **this is not a good idea**.  I wasted a lot of time on this, and I couldn't get code working to do this.  Eventually, I came to the conclusion that since this is a standardized protocol, there's probably software to decode this already.  So please, don't try and reinvent the wheel like me.
 
-I downloaded the first suggestion, [SeaTTY](http://www.dxsoft.com/en/products/seatty/).  After installing the program, you can read through information about the program by going to Help > Contents.  However, to decode the header, simply do the following:
+With some Googling, I came across [this forum post](http://forums.radioreference.com/threads/same-decoding.271140/post-2210417), which recommends three different programs to decode SAME messages.  **NOTE:  These only work on Windows.  There are alternatives for Linux such as [sameold](https://github.com/cbs228/sameold) in Rust or [these NWR tools](https://github.com/ghewgill/nwr), but I have not tested them.**  I downloaded the first suggestion, [SeaTTY](http://www.dxsoft.com/en/products/seatty/).  After installing the program, you can read through information about the program by going to Help > Contents.  However, to decode the header, simply do the following:
   1.  Switch the Mode to NWR-SAME by selecting Mode > NWR-SAME.
-
-![Where to change Mode setting](images/seatty1_mode.png)
-
   2.  Clear the buffer for better readability by selecting File > Clear Buffer.
-
-![Where to clear the buffer](images/seatty2_buffer.png)
-
   3.  Open the warning.wav file by selecting File > Decode From File and then selecting the file in File Explorer.
 
-![Where to open to audio file](images/seatty3_decode.png)
+<img src="images/seatty1_mode.png" width="324" /> <img src="images/seatty2_buffer.png" width="324" /> <img src="images/seatty3_decode.png" width="324" />
 
 You should obtain output similar to the following:
 ```
