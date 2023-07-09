@@ -5,7 +5,7 @@ Writeups for UIUCTF 2023: https://uiuc.tf/
 ## Categories
 
 - misc
-  - [ ] [Tornado Warning]()
+    - [Tornado Warning](misc/tornado-warning)
 - osint
 
 - crypto
